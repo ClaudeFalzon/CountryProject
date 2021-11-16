@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.nav_container {
+  /* background-color: rgba(194, 194, 194, 0.815);  */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /* position: fixed;
+   
+    top:0;
+    left: 0;
+    z-index: 999; 
+    width: 100%;
+   */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.keys {
+  font-weight: 500;
+}
+.main {
+  /*   height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+  max-width: 70%;
+  margin: 0 auto;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /*  z-index: 0; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+width: 50%; 
+  gap: 5px;
+  
+}
+
+
+ 
+
+.card .flag img {
+  width: 220px;
+  height: 150px;
+}
+
+.notfound_2 {
+  padding: 5px;
+}
+.notfound_2 h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.span_one {
+  padding-top: 20px;
+  font-size: 3rem;
+}
+
+.span_two {
+  font-size: 16px;
+  color: rgb(78, 78, 78);
+  /* font-style: italic; */
+}
+input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 0px;
+  border: 1px solid rgb(214, 214, 214);
+}
+
+input:focus,
+textarea:focus {
+  outline: none !important;
+  border-color: rgb(192, 0, 128);
+}
+
+textarea {
+  border: 1px solid rgb(214, 214, 214);
+  padding:15px;
+}
+.icon-logo {
+  color: rgb(192, 0, 128);
+  font-size: 60px;
+  padding-top: 10px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.basic-nav-choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 40vh; */
+  text-align: center;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 100px;
+}
+
+.flag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag h2 {
+  margin-bottom: 20px;
+}
+
+.further_info p {
+  padding: 5px;
+}
+
+.icon_notfound {
+  margin-bottom: -8px;
+}
+
+.annass:hover {
+  color: rgb(207, 1, 139);
+  /* transition: 1s ease-in-out; */
+}
+.container-form {
+  width: 80%;
+}
+
+form {
+  width: 100%;
+}
+.container-form .entrance-form {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container-form .entrance-form h2 {
+  font-weight: 600;
+}
+.container-form .entrance-form .bottom-line {
+  height: 2px;
+  width: 5rem;
+  background-color: rgb(241, 1, 161);
+}
+
+.text-fields {
+  display: grid;
+  grid-template-areas:
+    "name"
+    "phone" 
+    "email"
+    "subject"
+    "message";
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+}
+.text-fields .name-input {
+  grid-area: name;
+  width: 500px;
+  margin-top: 45px;
+}
+.text-fields .email-input {
+  grid-area: email;
+}
+.text-fields .subject-input {
+  grid-area: subject;
+}
+.text-fields .phone-input {
+  grid-area: phone;
+} 
+.text-fields .message-input {
+  grid-area: message;
+  height: 150px;
+}
+.text-fields .text-input {
+  padding: 0.5rem 1rem;
+}
+
+
+
+@media (max-width: 1000px) {
+  .icon-logo {
+    font-size: 40px;
+  }
+
+  .logo-container h1 {
+    font-size: 20px;
+  }
+
+  .basic-nav-choice > p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 681px) {
+  .nav {
+    flex-direction: column;
+    /* padding: 30px; */
+    height: 100px;
+    justify-content: center;
+  }
+  .icon-logo {
+    font-size: 40px;
+    padding-bottom: 5px;
+  }
+  .logo-container h1 {
+    font-size: 20px;
+  }
+
+  .text-fields .name-input {
+    grid-area: name;
+    width: 300px;
+    /* margin-top: 45px; */
+  }
+
+  .container-form .entrance-form {
+    margin-top: 20px;
+  }
+
+  .container-form .entrance-form h2 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .container-form .entrance-form p {
+    font-size: 14px;
+  }
+
+  .container-form .entrance-form .bottom-line {
+    height: 1px;
+    width: 5rem;
+    background-color: rgb(241, 1, 161);
+  }
+
+  .notfound_2 h2 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .icon_notfound {
+    margin-bottom: -5px;
+    font-size: 2.2rem;
+  }
+
+  .span_two {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 482px) {
+  .card {
+    padding: 40px;
+  }
+
+
+  
+  .card .flag img {
+    width: 180px;
+    height: 120px;
+    
+  }
+
+  .card .further_info p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav {
+    max-width: 100%;
+  }
+
+  .card .flag img {
+    width: 150px;
+    height: 100px;
+  }
+}
