@@ -40,48 +40,52 @@ export default function ContactMe() {
       </div>
 
       <div>
-        <form ref={formRef} onSubmit={sendEmail}>
-          <div className="text-fields">
-            <input
-              type="text"
-              placeholder="Name:"
-              required
-              name="user_name"
-              className="name-input"
-            />
+        {status ? (
+          <h2>Thanks for your email</h2>
+        ) : (
+          <form ref={formRef} onSubmit={sendEmail}>
+            <div className="text-fields">
+              <input
+                type="text"
+                placeholder="Name:"
+                required
+                name="user_name"
+                className="name-input"
+              />
 
-            <input
-              type="email"
-              required
-              placeholder="Email:"
-              name="user_email"
-              className="email-input"
-            />
+              <input
+                type="email"
+                required
+                placeholder="Email:"
+                name="user_email"
+                className="email-input"
+              />
 
-            <input
-              type="text"
-              required
-              placeholder="Subject:"
-              name="subject"
-              className="subject-input"
-            />
-           <input
-              type="tel"
-              required
-              placeholder="Phone No:"
-              name="user_phone"
-              className="phone-input"
-            /> 
-            <textarea
-              required
-              name="message"
-              placeholder="Enter your message:"
-              className="message-input"
-            ></textarea>
+              <input
+                type="text"
+                required
+                placeholder="Subject:"
+                name="subject"
+                className="subject-input"
+              />
+              <input
+                type="tel"
+                required
+                placeholder="Phone No:"
+                name="user_phone"
+                className="phone-input"
+              />
+              <textarea
+                required
+                name="message"
+                placeholder="Enter your message:"
+                className="message-input"
+              ></textarea>
 
-            <button>Submit</button>
-          </div>
-        </form>
+              <button>Submit</button>
+            </div>
+          </form>
+        )}
       </div>
     </div>
   );
