@@ -1,23 +1,25 @@
 import React from "react";
 import { MdEnhancedEncryption } from "react-icons/md";
+import { BiMessageError } from "react-icons/bi";
 
 export default function NotFound() {
   return (
-    <div style={{ textAlign: "center", marginTop: "150px" }}>
-      <h1 style={{ fontSize: "60px", color: "rgb(192, 0, 128" }}>
+    <div className="carrierNotFound" /* style={{ textAlign: "center", marginTop: "100px" }} */>
+      <h5 className="h1NotFound" style={{ fontSize: "60px", color: "rgb(192, 0, 128" }}>
         <span
           className="span_one"
            >
-          <MdEnhancedEncryption className="icon_notfound"/>
+          <BiMessageError className="icon_notfound"/>
         </span>
         <span className="span_two" >
-           We are sorry.
+           
         </span>
-      </h1>
+      </h5>
 
       <div className="notfound_2">
-        <h2>There's no content. We couldn't find anything.</h2>
-        <h2>You may wish to click on our logo to retry.</h2>
+        <p>We are sorry.</p>
+        <p>We couldn't find anything.</p>
+        <p>You may wish to click on our logo to continue.</p>
       </div>
     </div>
   );

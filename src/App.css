@@ -25,6 +25,50 @@
    */
 }
 
+.thanks {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center; 
+margin-top: 100px;
+
+
+}
+
+ .carrierNotFound {
+    margin-top: 60px;
+   text-align: center;
+  }
+
+.h1NotFound {
+  display: flex;
+  flex-direction: column;
+}
+
+.notfound_2 {
+  padding: 5px;
+  
+}
+.notfound_2 h2 {
+  font-size: 16px;
+ /*  font-weight: 300; */
+  
+}
+
+.span_one {
+  padding-top: 20px;
+  font-size: 3rem;
+  color: rgb(192, 0, 128);
+}
+
+.span_two {
+  font-size: 16px;
+  color: rgb(78, 78, 78);
+  /* font-style: italic; */
+}
+
+
 .nav {
   display: flex;
   align-items: center;
@@ -73,15 +117,20 @@ width: 50%;
 
 .notfound_2 {
   padding: 5px;
+
 }
 .notfound_2 h2 {
   font-size: 16px;
-  font-weight: 300;
+ /*  font-weight: 200; */
+  margin-bottom: 2px;
+ 
+ 
+
 }
 
 .span_one {
   padding-top: 20px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .span_two {
@@ -281,19 +330,24 @@ button {
     background-color: rgb(241, 1, 161);
   }
 
-  .notfound_2 h2 {
+  .notfound_2 p {
     font-size: 14px;
-    font-weight: 300;
+   
+    color: black;
   }
-
+ 
+  .carrierNotFound {
+    margin-top: 60px;
+   text-align: center;
+  }
   .icon_notfound {
-    margin-bottom: -5px;
-    font-size: 2.2rem;
+    margin-bottom: -10px;
+    font-size: 2rem;
   }
-
+ 
   .span_two {
-    font-size: 14px;
-  }
+    font-size: 13px;
+  } 
 }
 
 @media (max-width: 482px) {
@@ -312,6 +366,8 @@ button {
   .card .further_info p {
     font-size: 12px;
   }
+
+  
 }
 
 @media (max-width: 420px) {
