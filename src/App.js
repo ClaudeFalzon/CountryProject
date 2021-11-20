@@ -15,7 +15,8 @@ function App() {
 
   useEffect(() => {
     getCountry("malta");
-    getCovid("malta")
+    getCovid("malta");
+    // eslint-disable-next-line
   }, []);
 
   const getCountry = async (countryName) => {

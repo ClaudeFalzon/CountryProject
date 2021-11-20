@@ -37,12 +37,11 @@ export default function ContactMe() {
             <div className="thanks">
               <div className="message">
                 <span className="span_one">
-                  {" "}
-                  <BiMessageCheck />{" "}
+                  <BiMessageCheck />
                 </span>
                 <p>Thank you for your email.</p>
+                <p>We will look into it & will revert to you within 24 hrs.</p>
               </div>
-              <p>We will look into it & will revert to you within 24 hrs.</p>
             </div>
           </div>
         ) : (

@@ -26,20 +26,17 @@
 }
 
 .thanks {
-
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center; 
-margin-top: 100px;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
 }
 
- .carrierNotFound {
-    margin-top: 60px;
-   text-align: center;
-  }
+.carrierNotFound {
+  margin-top: 60px;
+  text-align: center;
+}
 
 .h1NotFound {
   display: flex;
@@ -48,12 +45,10 @@ margin-top: 100px;
 
 .notfound_2 {
   padding: 5px;
-  
 }
 .notfound_2 h2 {
   font-size: 16px;
- /*  font-weight: 300; */
-  
+  /*  font-weight: 300; */
 }
 
 .span_one {
@@ -67,7 +62,6 @@ margin-top: 100px;
   color: rgb(78, 78, 78);
   /* font-style: italic; */
 }
-
 
 .nav {
   display: flex;
@@ -102,13 +96,9 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-width: 50%; 
+  width: 50%;
   gap: 5px;
-  
 }
-
-
- 
 
 .card .flag img {
   width: 220px;
@@ -117,14 +107,9 @@ width: 50%;
 
 .notfound_2 {
   padding: 5px;
-
 }
-.notfound_2 h2 {
+.notfound_2 p {
   font-size: 16px;
- /*  font-weight: 200; */
-  margin-bottom: 2px;
- 
- 
 
 }
 
@@ -153,7 +138,7 @@ textarea:focus {
 
 textarea {
   border: 1px solid rgb(214, 214, 214);
-  padding:15px;
+  padding: 15px;
 }
 .icon-logo {
   color: rgb(192, 0, 128);
@@ -206,7 +191,7 @@ textarea {
 }
 
 .icon_notfound {
-  margin-bottom: -8px;
+  margin-bottom: -6px;
 }
 
 .annass:hover {
@@ -243,7 +228,7 @@ form {
   display: grid;
   grid-template-areas:
     "name"
-    "phone" 
+    "phone"
     "email"
     "subject"
     "message";
@@ -266,7 +251,7 @@ button {
 }
 .text-fields .phone-input {
   grid-area: phone;
-} 
+}
 .text-fields .message-input {
   grid-area: message;
   height: 150px;
@@ -274,8 +259,6 @@ button {
 .text-fields .text-input {
   padding: 0.5rem 1rem;
 }
-
-
 
 @media (max-width: 1000px) {
   .icon-logo {
@@ -330,24 +313,27 @@ button {
     background-color: rgb(241, 1, 161);
   }
 
-  .notfound_2 p {
-    font-size: 14px;
-   
+  .notfound_2 p, .message p {
+    font-size: 15px;
+
     color: black;
   }
- 
+
   .carrierNotFound {
-    margin-top: 60px;
-   text-align: center;
+    margin-top: 68px;
+    text-align: center;
+    
   }
   .icon_notfound {
-    margin-bottom: -10px;
+    margin-bottom: -6px;
     font-size: 2rem;
   }
+
  
+
   .span_two {
     font-size: 13px;
-  } 
+  }
 }
 
 @media (max-width: 482px) {
@@ -355,19 +341,14 @@ button {
     padding: 40px;
   }
 
-
-  
   .card .flag img {
     width: 180px;
     height: 120px;
-    
   }
 
   .card .further_info p {
     font-size: 12px;
   }
-
-  
 }
 
 @media (max-width: 420px) {

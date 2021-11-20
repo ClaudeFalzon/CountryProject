@@ -1,5 +1,5 @@
 import React from "react";
-import { MdEnhancedEncryption } from "react-icons/md";
+
 import { BiMessageError } from "react-icons/bi";
 
 export default function NotFound() {
