@@ -4,7 +4,7 @@ import { BiMessageCheck } from "react-icons/bi";
 
 export default function ContactMe() {
   const formRef = useRef(); /* this is a tag which we will attach to our form */
-  const [status, setStatus] = useState(true);
+  const [status, setStatus] = useState(false);
 
   const contextHeader = useRef();
 
