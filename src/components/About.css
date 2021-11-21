@@ -40,8 +40,8 @@ img {
 
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  padding: 20px;
+    gap: 20px;
+  padding: 10px;
   text-align: center;
   }
   .grid-container div {
