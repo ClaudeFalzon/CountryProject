@@ -275,10 +275,13 @@ button {
 } */
 .text-fields .name-input {
   grid-area: name;
-  width: 600px; 
+  width: 600px;
   margin-top: 45px;
 }
 
+.text-fields .item-contact-form{
+ font-size: 14px;
+}
 .text-fields .surname-input {
   grid-area: surname;
 }
@@ -298,6 +301,7 @@ button {
 .text-fields .message-input {
   grid-area: message;
   height: 150px;
+  
 }
 .text-fields .text-input {
   padding: 0.5rem 1rem;
@@ -318,36 +322,33 @@ button {
 }
 
 @media (max-width: 670px) {
-  
-  /* .text-fields {
-      grid-template-areas:
-      "name"
-      "email"
-      "phone"
-      "subject"
-      "message"
-      "submit ";
-    }  */
+  .text-fields {
+    grid-template-areas:
+      "name name name"
+      "surname surname surname"
+      "email email email"
+      "subject subject subject"
+      "message message submit "
+      "message message submit ";
+  }
   .sendbtn {
-    font-size: 20px; 
-  
+    font-size: 20px;
+
     /* color: blue; */
     /* padding: 10px; */
   }
 
-
-.text-fields .name-input {
-  grid-area: name;
-  width: 500px; 
-  margin-top: 45px;
-} 
-/* input{
-  width: 100%;
-} */
-
+  .text-fields .name-input {
+    grid-area: name;
+    width: 500px;
+    margin-top: 45px;
+  }
+  input {
+    width: 100%;
+  }
 }
 button {
-  padding: 20px
+  padding: 20px;
 }
 
 @media (max-width: 681px) {
@@ -367,7 +368,6 @@ button {
 
   .text-fields .name-input {
     grid-area: name;
-  
   }
 
   .container-form .entrance-form {
@@ -422,9 +422,14 @@ button {
   .card .further_info p {
     font-size: 12px;
   }
+
+  .text-fields .item-contact-form{
+ font-size: 12px;
 }
 
-@media (max-width: 420px) {
+}
+
+@media (max-width: 440px) {
   .nav {
     max-width: 100%;
   }
@@ -432,5 +437,29 @@ button {
   .card .flag img {
     width: 150px;
     height: 100px;
+  }
+
+  .text-fields {
+    grid-template-areas:
+      "name "
+      "surname "
+      "email "
+      "subject "
+      "message  "
+      " submit ";
+  }
+
+  .text-fields .name-input {
+    grid-area: name;
+    width: 280px;
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 300px) {
+  .text-fields .name-input {
+    grid-area: name;
+    width: 235px;
+    margin-top: 45px;
   }
 }

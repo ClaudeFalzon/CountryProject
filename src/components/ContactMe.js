@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import EmailJS from "emailjs-com";
 import { BiMessageCheck, BiMailSend } from "react-icons/bi";
-import { MdDriveFileRenameOutline } from "react-icons/md";
 
 
 
@@ -70,7 +69,7 @@ export default function ContactMe() {
                   placeholder="Name:"
                   required
                   name="user_name"
-                  className="name-input"
+                  className="name-input item-contact-form"
                 />
                 {/* </div>
                 </div> */}
@@ -79,14 +78,14 @@ export default function ContactMe() {
                   placeholder="Surname:"
                   required
                   name="user_surname"
-                  className="surname-input"
+                  className="surname-input item-contact-form"
                 />
                 <input
                   type="email"
                   required
                   placeholder="Email:"
                   name="user_email"
-                  className="email-input"
+                  className="email-input item-contact-form"
                 />
 
                 <input
@@ -94,13 +93,13 @@ export default function ContactMe() {
                   required
                   placeholder="Subject:"
                   name="subject"
-                  className="subject-input"
+                  className="subject-input item-contact-form"
                 />
                 <textarea
                   required
                   name="message"
                   placeholder="Enter your message:"
-                  className="message-input"
+                  className="message-input item-contact-form"
                 ></textarea>
 
                 <button className="submit-button">
