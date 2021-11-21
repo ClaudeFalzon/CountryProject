@@ -74,7 +74,7 @@ export default function About() {
         <div className="item">
           <h4>Collaboration</h4>
           <img
-            src="https://kissflow.com/wp-content/uploads/2020/11/What-is-Collaboration.jpg"
+            src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/wealth-and-asset-management/ey-community-collaboration-20180821.jpg"
             alt=""
             width="200"
             height="200"
