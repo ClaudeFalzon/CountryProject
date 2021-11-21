@@ -236,12 +236,11 @@ form {
 .text-fields {
   display: grid;
   grid-template-areas:
-    "name name name"
-    "surname surname surname"
-    "email email email"
-    "subject subject subject"
-    "message message submit "
-    "message message submit ";
+    "name name name  name"
+    "email email email  email"
+    "subject phone phone  phone"
+    "message message submit submit "
+    "message message submit submit";
   gap: 5px;
 }
 
@@ -278,11 +277,6 @@ button {
   width: 600px; 
   margin-top: 45px;
 }
-
-.text-fields .surname-input {
-  grid-area: surname;
-}
-
 .text-fields .email-input {
   grid-area: email;
 }
@@ -319,7 +313,7 @@ button {
 
 @media (max-width: 670px) {
   
-  /* .text-fields {
+  .text-fields {
       grid-template-areas:
       "name"
       "email"
@@ -327,7 +321,7 @@ button {
       "subject"
       "message"
       "submit ";
-    }  */
+    } 
   .sendbtn {
     font-size: 20px; 
   
@@ -336,14 +330,14 @@ button {
   }
 
 
-.text-fields .name-input {
+  .text-fields .name-input {
   grid-area: name;
-  width: 500px; 
+  width: 100%; 
   margin-top: 45px;
-} 
-/* input{
+}
+input{
   width: 100%;
-} */
+}
 
 }
 button {
