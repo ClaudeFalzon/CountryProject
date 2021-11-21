@@ -409,6 +409,26 @@ button {
   }
 }
 
+
+@media (max-width: 530px) {
+.text-fields {
+    grid-template-areas:
+      "name "
+      "surname "
+      "email "
+      "subject "
+      "message  "
+      " submit ";
+  }
+
+  .text-fields .name-input {
+    grid-area: name;
+    width: 280px;
+    margin-top: 45px;
+  }
+
+}
+
 @media (max-width: 482px) {
   .card {
     padding: 40px;
