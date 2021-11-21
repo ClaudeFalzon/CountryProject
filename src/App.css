@@ -279,8 +279,8 @@ button {
   margin-top: 45px;
 }
 
-.text-fields .item-contact-form{
- font-size: 14px;
+.text-fields .item-contact-form {
+  font-size: 14px;
 }
 .text-fields .surname-input {
   grid-area: surname;
@@ -301,7 +301,6 @@ button {
 .text-fields .message-input {
   grid-area: message;
   height: 150px;
-  
 }
 .text-fields .text-input {
   padding: 0.5rem 1rem;
@@ -409,9 +408,8 @@ button {
   }
 }
 
-
 @media (max-width: 530px) {
-.text-fields {
+  .text-fields {
     grid-template-areas:
       "name "
       "surname "
@@ -423,10 +421,9 @@ button {
 
   .text-fields .name-input {
     grid-area: name;
-    width: 280px;
+    width: 400px;
     margin-top: 45px;
   }
-
 }
 
 @media (max-width: 482px) {
@@ -443,10 +440,9 @@ button {
     font-size: 12px;
   }
 
-  .text-fields .item-contact-form{
- font-size: 12px;
-}
-
+  .text-fields .item-contact-form {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -476,10 +472,18 @@ button {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   .text-fields .name-input {
     grid-area: name;
     width: 235px;
     margin-top: 45px;
+  }}
+
+  @media (max-width: 260px) {
+    .text-fields .name-input {
+      grid-area: name;
+      width: 180px;
+      margin-top: 45px;
+    }
   }
-}
+
