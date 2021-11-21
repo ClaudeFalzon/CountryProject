@@ -1,11 +1,17 @@
 import React, { useRef, useState } from "react";
 import EmailJS from "emailjs-com";
-import { BiMessageCheck } from "react-icons/bi";
+import { BiMessageCheck, BiMailSend } from "react-icons/bi";
+import { MdDriveFileRenameOutline } from "react-icons/md";
+
+ import "react-phone-number-input/style.css"; 
+import PhoneInput from "react-phone-number-input";
 
 export default function ContactMe() {
   const formRef = useRef(); /* this is a tag which we will attach to our form */
   const [status, setStatus] = useState(false);
 
+  const [value, setValue] = useState();
+console.log(value)
   const contextHeader = useRef();
 
   const sendEmail = (e) => {
@@ -53,13 +59,22 @@ export default function ContactMe() {
             </div>
             <form ref={formRef} onSubmit={sendEmail}>
               <div className="text-fields">
+                {/*  <div className="item-form-icon">
+                  <div>
+                    
+                    <MdDriveFileRenameOutline className="item-form-icon-one" />
+                  </div>
+                  <div> */}
+
                 <input
                   type="text"
-                  placeholder="Name:"
+                  placeholder="Name and Surname:"
                   required
                   name="user_name"
                   className="name-input"
                 />
+                {/* </div>
+                </div> */}
 
                 <input
                   type="email"
@@ -68,7 +83,7 @@ export default function ContactMe() {
                   name="user_email"
                   className="email-input"
                 />
-
+             
                 <input
                   type="text"
                   required
@@ -76,13 +91,24 @@ export default function ContactMe() {
                   name="subject"
                   className="subject-input"
                 />
-                <input
+                {/*   <input
                   type="tel"
                   required
                   placeholder="Phone No:"
                   name="user_phone"
                   className="phone-input"
+                /> */}
+
+                <PhoneInput
+                  placeholder="Enter phone number"
+                  international
+                  value={value}
+                  onChange={setValue}
+                  name="phone"
+                  className="phone-input"
+                  required
                 />
+
                 <textarea
                   required
                   name="message"
@@ -90,7 +116,11 @@ export default function ContactMe() {
                   className="message-input"
                 ></textarea>
 
-                <button>Submit</button>
+                <button className="submit-button">
+                  {/* <div> */} <BiMailSend className="sendbtn" />
+                  {/*  </div>{" "} */}
+                  {/* <div>Submit</div> */}
+                </button>
               </div>
             </form>
           </div>

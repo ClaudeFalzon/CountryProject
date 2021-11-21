@@ -7,6 +7,16 @@
   font-family: "Raleway", sans-serif;
 }
 
+/* .item-form-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-form-icon-one {
+  margin-top: 30px;
+}
+ */
 .text-link {
   color: inherit;
   text-decoration: inherit;
@@ -110,7 +120,6 @@ form {
 }
 .notfound_2 p {
   font-size: 16px;
-
 }
 
 .span_one {
@@ -199,7 +208,7 @@ textarea {
   /* transition: 1s ease-in-out; */
 }
 .container-form {
-  width: 80%;
+  max-width: 100%;
 }
 
 form {
@@ -227,20 +236,45 @@ form {
 .text-fields {
   display: grid;
   grid-template-areas:
-    "name"
-    "phone"
-    "email"
-    "subject"
-    "message";
-  gap: 10px;
+    "name name name  name"
+    "email email email  email"
+    "subject phone phone  phone"
+    "message message submit submit "
+    "message message submit submit";
+  gap: 5px;
 }
 
 button {
-  padding: 10px;
+  background-color: rgb(161, 15, 118);
+  color: white;
+  font-weight: bold;
+  border: none;
+  /*  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /*  gap: 5px; */
 }
+
+.sendbtn {
+  font-size: 2rem;
+  /* color: blue; */
+  /* padding: 10px; */
+}
+
+/* .subject-input {
+  padding-right: 10px;
+}
+.phone-input{
+
+  margin-left: 30px;
+} */
+/* button {
+  padding: 10px;
+} */
 .text-fields .name-input {
   grid-area: name;
-  width: 500px;
+  width: 600px; 
   margin-top: 45px;
 }
 .text-fields .email-input {
@@ -251,6 +285,9 @@ button {
 }
 .text-fields .phone-input {
   grid-area: phone;
+}
+.text-fields .submit-button {
+  grid-area: submit;
 }
 .text-fields .message-input {
   grid-area: message;
@@ -274,6 +311,38 @@ button {
   }
 }
 
+@media (max-width: 670px) {
+  
+  .text-fields {
+      grid-template-areas:
+      "name name"
+      "email email"
+      "subject phone"
+      "subject phone"
+      "message message"
+      "submit submit ";
+    } 
+  .sendbtn {
+    font-size: 20px; 
+  
+    /* color: blue; */
+    /* padding: 10px; */
+  }
+
+  .text-fields .name-input {
+  grid-area: name;
+  width: 100%; 
+  margin-top: 45px;
+}
+input{
+  width: 100%;
+}
+
+}
+button {
+  padding: 20px
+}
+
 @media (max-width: 681px) {
   .nav {
     flex-direction: column;
@@ -291,8 +360,7 @@ button {
 
   .text-fields .name-input {
     grid-area: name;
-    width: 300px;
-    /* margin-top: 45px; */
+  
   }
 
   .container-form .entrance-form {
@@ -313,7 +381,8 @@ button {
     background-color: rgb(241, 1, 161);
   }
 
-  .notfound_2 p, .message p {
+  .notfound_2 p,
+  .message p {
     font-size: 15px;
 
     color: black;
@@ -322,14 +391,11 @@ button {
   .carrierNotFound {
     margin-top: 68px;
     text-align: center;
-    
   }
   .icon_notfound {
     margin-bottom: -6px;
     font-size: 2rem;
   }
-
- 
 
   .span_two {
     font-size: 13px;
