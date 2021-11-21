@@ -32,13 +32,16 @@ img {
   margin: 15px 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
   .nav {
-    max-width: 100%;
+    width: 100%;
   }
 
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  padding: 20px;
+  text-align: center;
   }
   .grid-container div {
     margin: 0 auto;
