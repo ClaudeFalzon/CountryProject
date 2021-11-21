@@ -1,7 +1,6 @@
 .nav {
   width: 100%;
-  
-  }
+}
 
 img {
   object-fit: cover;
@@ -10,8 +9,9 @@ img {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
-  padding: 20px;
+
+  gap: 40px;
+  /*  padding: 20px; */
   text-align: center;
 }
 
@@ -22,7 +22,7 @@ img {
 }
 
 .grid-container .item p {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .grid-container .item h4 {
@@ -40,9 +40,9 @@ img {
 
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  padding: 10px;
-  text-align: center;
+    /* gap: 20px; */
+    /* padding: 10px; */
+    text-align: center;
   }
   .grid-container div {
     margin: 0 auto;
@@ -51,14 +51,9 @@ img {
 
 @media (max-width: 729px) {
   .nav {
-    
   }
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
     padding: 0;
   }
 }
-
-
-
-
