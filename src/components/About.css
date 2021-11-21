@@ -1,5 +1,5 @@
 .nav {
-  max-width: 100%;
+  width: 100%;
   
   }
 
@@ -51,9 +51,11 @@ img {
 
 @media (max-width: 729px) {
   .nav {
-    max-width: 100%;
+    width: 100%;
   }
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+
