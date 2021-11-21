@@ -21,9 +21,9 @@ export default function About() {
             height="200"
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            illum eum ab asperiores labore voluptas, quaerat sit possimus ut
-            deleniti?
+            This project was developed using React.js. The latter is a JS
+            library that is used for building user interfaces specifically for
+            single-page applications.
           </p>
         </div>
 
@@ -36,9 +36,9 @@ export default function About() {
             height="200"
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            illum eum ab asperiores labore voluptas, quaerat sit possimus ut
-            deleniti?
+            The Country Finder project fetches data dynamically from REST
+            COUNTRIES API and draws upon API Endpoints V2.
+            [https://restcountries.com/#rest-countries]
           </p>
         </div>
 
@@ -51,9 +51,9 @@ export default function About() {
             height="200"
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            illum eum ab asperiores labore voluptas, quaerat sit possimus ut
-            deleniti?
+            The Country Finder project also fetches data dynamically from
+            another API to dynamically paint data related to the current
+            COVID-19 pandemic. [https://api.covid19api.com]
           </p>
         </div>
         <div className="item">
@@ -65,9 +65,9 @@ export default function About() {
             height="200"
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            illum eum ab asperiores labore voluptas, quaerat sit possimus ut
-            deleniti?
+            Well... I'm Claude. I currently live in Germany & I'm midway upon
+            the journey of my life. The pathway has not yet been lost but I
+            believe that humanity is overrated.
           </p>
         </div>
 
@@ -80,9 +80,9 @@ export default function About() {
             height="200"
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            illum eum ab asperiores labore voluptas, quaerat sit possimus ut
-            deleniti?
+            Collaboration is of the essence. We may be stronger together than
+            alone. However, in the end as the philosopher Wittgenstein said the
+            limits of our language are the limits of our world.
           </p>
         </div>
 
@@ -95,9 +95,9 @@ export default function About() {
             height="200"
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            illum eum ab asperiores labore voluptas, quaerat sit possimus ut
-            deleniti?
+            The Digital Career Institute was born as an initiative to integrate
+            refugees into digital jobs. Today it is committed to train anyone
+            who wants to pursue a tech career. DCI measures success by impact.
           </p>
         </div>
       </div>
