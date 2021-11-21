@@ -315,12 +315,12 @@ button {
   
   .text-fields {
       grid-template-areas:
-      "name name"
-      "email email"
-      "subject phone"
-      "subject phone"
-      "message message"
-      "submit submit ";
+      "name"
+      "email"
+      "phone"
+      "subject"
+      "message"
+      "submit ";
     } 
   .sendbtn {
     font-size: 20px; 
@@ -328,6 +328,7 @@ button {
     /* color: blue; */
     /* padding: 10px; */
   }
+
 
   .text-fields .name-input {
   grid-area: name;
