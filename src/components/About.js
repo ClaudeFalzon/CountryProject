@@ -38,7 +38,7 @@ export default function About() {
             <p>
               The Country Finder project fetches data dynamically from REST
               COUNTRIES API and draws upon API Endpoints V2.
-              [https://restcountries.com/#rest-countries]
+              
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function About() {
             <p>
               The Country Finder project also fetches data dynamically from
               another API to dynamically paint data related to the current
-              COVID-19 pandemic. [https://api.covid19api.com]
+              COVID-19 pandemic. 
             </p>
           </div>
           <div className="item">
@@ -81,7 +81,7 @@ export default function About() {
             />
             <p>
               Collaboration is of the essence. We may be stronger together than
-              alone. However, in the end as the philosopher Wittgenstein said
+              alone. However, as  Wittgenstein said
               the limits of our language are the limits of our world.
             </p>
           </div>
@@ -95,10 +95,8 @@ export default function About() {
               height="150"
             />
             <p>
-              The Digital Career Institute was born as an initiative to
-              integrate refugees into digital jobs. Today it is committed to
-              train anyone who wants to pursue a tech career. DCI measures
-              success by impact.
+              The Digital Career Institute was born as an initiative to              integrate refugees into digital jobs. Today it is committed to
+              train anyone who wants to pursue a tech career. 
             </p>
           </div>
         </div>
