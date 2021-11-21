@@ -339,16 +339,16 @@ button {
 
   .text-fields .name-input {
     grid-area: name;
-    width: 500px;
+    width: 520px;
     margin-top: 45px;
   }
   input {
     width: 100%;
   }
 }
-button {
-  padding: 20px;
-}
+ button {
+  padding: 12px;
+}  
 
 @media (max-width: 681px) {
   .nav {
@@ -356,6 +356,7 @@ button {
     /* padding: 30px; */
     height: 100px;
     justify-content: center;
+    max-width: 100%;
   }
   .icon-logo {
     font-size: 40px;
@@ -409,6 +410,11 @@ button {
 }
 
 @media (max-width: 530px) {
+
+  .nav {
+    max-width: 100%;
+  }
+
   .text-fields {
     grid-template-areas:
       "name "
@@ -427,7 +433,11 @@ button {
 }
 
 @media (max-width: 482px) {
-  .card {
+  .nav {
+    max-width: 100%;
+  } 
+ 
+ .card {
     padding: 40px;
   }
 
@@ -473,6 +483,10 @@ button {
 }
 
 @media (max-width: 320px) {
+  .nav {
+    max-width: 100%;
+  }
+
   .text-fields .name-input {
     grid-area: name;
     width: 235px;
@@ -480,6 +494,11 @@ button {
   }}
 
   @media (max-width: 260px) {
+
+    .nav {
+    max-width: 100%;
+  }
+  
     .text-fields .name-input {
       grid-area: name;
       width: 180px;
