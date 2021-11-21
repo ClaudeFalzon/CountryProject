@@ -101,12 +101,12 @@ console.log(value)
 
                 <PhoneInput
                   placeholder="Enter phone number"
-                  international
+                  /* international */
                   value={value}
                   onChange={setValue}
                   name="phone"
                   className="phone-input"
-                  required
+                 /*  required */
                 />
 
                 <textarea
