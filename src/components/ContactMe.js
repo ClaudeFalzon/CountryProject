@@ -1,17 +1,15 @@
 import React, { useRef, useState } from "react";
 import EmailJS from "emailjs-com";
 import { BiMessageCheck, BiMailSend } from "react-icons/bi";
-import { MdDriveFileRenameOutline } from "react-icons/md";
 
-import "react-phone-number-input/style.css";  
-import PhoneInput from "react-phone-number-input";
+
 
 export default function ContactMe() {
   const formRef = useRef(); /* this is a tag which we will attach to our form */
   const [status, setStatus] = useState(false);
 
-  const [value, setValue] = useState();
-  console.log(value);
+
+  
   const contextHeader = useRef();
 
   const sendEmail = (e) => {
@@ -68,20 +66,26 @@ export default function ContactMe() {
 
                 <input
                   type="text"
-                  placeholder="Name and Surname:"
+                  placeholder="Name:"
                   required
                   name="user_name"
-                  className="name-input"
+                  className="name-input item-contact-form"
                 />
                 {/* </div>
                 </div> */}
-
+                <input
+                  type="text"
+                  placeholder="Surname:"
+                  required
+                  name="user_surname"
+                  className="surname-input item-contact-form"
+                />
                 <input
                   type="email"
                   required
                   placeholder="Email:"
                   name="user_email"
-                  className="email-input"
+                  className="email-input item-contact-form"
                 />
 
                 <input
@@ -89,30 +93,13 @@ export default function ContactMe() {
                   required
                   placeholder="Subject:"
                   name="subject"
-                  className="subject-input"
+                  className="subject-input item-contact-form"
                 />
-                {/*   <input
-                  type="tel"
-                  required
-                  placeholder="Phone No:"
-                  name="user_phone"
-                  className="phone-input"
-                /> */}
-
-                <PhoneInput
-                  placeholder="Tel:  [insert country code first e.g. +356]"
-                  international
-                  value={value}
-                  onChange={setValue}
-                  name="phone"
-                  className="phone-input"
-                />
-
                 <textarea
                   required
                   name="message"
                   placeholder="Enter your message:"
-                  className="message-input"
+                  className="message-input item-contact-form"
                 ></textarea>
 
                 <button className="submit-button">
