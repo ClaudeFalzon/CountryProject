@@ -13,6 +13,11 @@ function App() {
 
   const navigate = useNavigate();
 
+  useEffect(() => {
+    getCountry("malta");
+    getCovid("malta");
+    // eslint-disable-next-line 
+  }, []);
 
 
   const getCountry = async (countryName) => {
@@ -58,11 +63,6 @@ function App() {
   console.log(country);
 console.log(covid)
 
-  useEffect(() => {
-    getCountry("malta");
-    getCovid("malta");
-    /* // eslint-disable-next-line */
-  }, []);
 
   return (
     <div className="App">
