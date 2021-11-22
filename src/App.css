@@ -7,6 +7,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+.PhoneInputCountrySelect::after {
+  content:"+"
+}
+
 /* .item-form-icon {
   display: flex;
   justify-content: center;
