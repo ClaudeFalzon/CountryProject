@@ -13,11 +13,7 @@ function App() {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    getCountry("malta");
-    getCovid("malta");
-    // eslint-disable-next-line
-  }, []);
+
 
   const getCountry = async (countryName) => {
     const response = await fetch(
@@ -44,10 +40,10 @@ function App() {
 
   if (result.message !== "Not Found") {
       setCovid(result);
-    } else {
+    }  else {
       navigate("*");
     }
-
+ 
 
   /*   console.log(result);
     setCovid(result); */
@@ -61,6 +57,12 @@ function App() {
   }; */
   console.log(country);
 console.log(covid)
+
+  useEffect(() => {
+    getCountry("malta");
+    getCovid("malta");
+    /* // eslint-disable-next-line */
+  }, []);
 
   return (
     <div className="App">

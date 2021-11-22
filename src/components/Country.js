@@ -8,7 +8,7 @@ export default function Country(props) {
 
     if (inputRef.current.value.trim() !== "") {
       props.getCountry(inputRef.current.value);
-      props.getCovid(inputRef.current.value);
+    props.getCovid(inputRef.current.value); 
     }
     inputRef.current.value = "";
   };
@@ -60,7 +60,7 @@ const country = props.country[0];
 
   console.log(Object.values(country.currencies)[0].name); */
 
-  const lastCovidElement = props.covid.pop();  
+  const lastCovidElement = props.covid.at(-1)/*[ props.covid.length-1 ]*/;  
 /*   console.log(lastCovidElement.Deaths); */ 
 
   return (
