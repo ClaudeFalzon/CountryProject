@@ -6,7 +6,7 @@ export default function About() {
       <div className="container-form">
         <div className="entrance-form">
           <h2>Country Info Application</h2>
-          <div class="bottom-line"></div>
+          <div className="bottom-line"></div>
           <p>Includes latest Covid Updates</p>
         </div>
       </div>
@@ -37,7 +37,7 @@ export default function About() {
             />
             <p>
               The Country Finder project fetches data dynamically from REST
-              COUNTRIES API and draws upon API Endpoints V2.
+              COUNTRIES API and draws upon API Endpoints V2 and V3.1.
               
             </p>
           </div>

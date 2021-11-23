@@ -2,7 +2,7 @@ import React from "react";
 /* import { IoEarthSharp } from "react-icons/io5"; */
 import { AiOutlineDribbbleSquare } from "react-icons/ai";
 import { Link } from "react-router-dom";
-export default function Header() {
+export default function Header(props) {
   return (
     <div className="nav_container">
       <div className="nav">
