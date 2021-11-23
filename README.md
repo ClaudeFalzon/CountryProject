@@ -8,7 +8,7 @@ This project was developed using React. [[This is a link to React](https://react
 
 ## Rest Countries API
 
-The Country Finder project fetches data dynamically from the Rest Countries API and draws upon API Endpoints V2 and V3  [[This is a link to the Rest Countries API](https://restcountries.com/)]
+The Country Finder project fetches data dynamically from the Rest Countries API and draws upon API Endpoints V2 and V3.1  [[This is a link to the Rest Countries API](https://restcountries.com/)]
 
 ## Covid-19 API
 
@@ -20,7 +20,7 @@ Equivalent to V1 with the exception of the coat of arms.
 
 ## Contact Form
 
-The contact me form is grid-based and data is captured via EmaoilJS directly from Javascript.  [This is a link to EmailJS documentation](https://www.emailjs.com/docs/)]
+The contact me form is grid-based and data is captured via EmailJS directly from Javascript.  [This is a link to EmailJS documentation](https://www.emailjs.com/docs/)]
 
 ## Snippets
 
