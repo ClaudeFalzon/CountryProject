@@ -52,7 +52,7 @@ export default function About() {
             />
             <p>
               The Country Finder project also fetches data dynamically from
-              another API in order to provide information with regard to the the current COVID-19 pandemic. 
+              another API in order to provide information with regard to the current COVID-19 pandemic. 
             </p>
           </div>
           <div className="item">
