@@ -16,14 +16,20 @@ function App() {
   useEffect(() => {
     getCountry("malta");
     getCovid("malta");
-    // eslint-disable-next-line 
+    // eslint-disable-next-line
   }, []);
 
-
   const getCountry = async (countryName) => {
-    const response = await fetch(
-      `https://restcountries.com/v2/name/${countryName}`
-    );
+    console.log(countryName);
+    let response;
+    countryName.toLowerCase() === "south korea" ||
+    countryName.toLowerCase() === "north korea"
+      ? (response = await fetch(
+          `https://restcountries.com/v3.1/name/${countryName}`
+        ))
+      : (response = await fetch(
+          `https://restcountries.com/v2/name/${countryName}`
+        ));
     const result = await response.json();
 
     if (result.status !== 404) {
@@ -34,7 +40,6 @@ function App() {
     console.log(result);
   };
 
-    
   const getCovid = async (countryName) => {
     // const response = await fetch("https://api.covid19api.com/summary");
     const response = await fetch(
@@ -42,17 +47,15 @@ function App() {
     );
     const result = await response.json();
 
-
-  if (result.message !== "Not Found") {
+    if (result.message !== "Not Found") {
       setCovid(result);
-    }  else {
+    } else {
       navigate("*");
     }
- 
-
-  /*   console.log(result);
-    setCovid(result); */
   };
+  /*   console.log(result);
+    setCovid(result); 
+  };*/
 
   /* const searchNewCountry = (e) => {
     e.preventDefault();
@@ -60,9 +63,8 @@ function App() {
       getCountry(inputRef.current.value);
     }
   }; */
-  console.log(country);
-console.log(covid)
-
+  /*  console.log(country);
+  console.log(covid); */
 
   return (
     <div className="App">
@@ -77,12 +79,33 @@ console.log(covid)
           <Route
             path="/"
             element={
-              country && <Country classname="country" country={country} getCountry={getCountry} getCovid={getCovid} covid={covid}/>
+              country && (
+                <Country
+                  className="country"
+                  country={country}
+                  getCountry={getCountry}
+                  getCovid={getCovid}
+                  covid={covid}
+                  setCovid={setCovid}
+                />
+              )
             }
           />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactMe />} />
-          <Route path="*" element={<NotFound />} />
+          <Route
+            path="*"
+            element={
+              <NotFound
+                country={country}
+                getCountry={getCountry}
+                getCovid={getCovid}
+                covid={covid}
+                setCovid={setCovid}
+                setCountry={setCountry}
+              />
+            }
+          />
         </Routes>
         {/*   {country && <Country country={country} />}   */}
       </div>

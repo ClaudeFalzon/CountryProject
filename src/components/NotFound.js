@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { BiMessageError } from "react-icons/bi";
 
-export default function NotFound() {
+export default function NotFound(props) {
+
+   useEffect(() => {
+     props.getCountry("malta");
+     props.getCovid("malta");
+     // eslint-disable-next-line
+   }, []);
+
   return (
+ 
+
     <div className="carrierNotFound" /* style={{ textAlign: "center", marginTop: "100px" }} */>
       <h5 className="h1NotFound" style={{ fontSize: "60px", color: "rgb(192, 0, 128" }}>
         <span
