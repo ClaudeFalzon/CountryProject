@@ -3,13 +3,15 @@ import EmailJS from "emailjs-com";
 import { BiMessageCheck, BiMailSend } from "react-icons/bi";
 
 
+/* import "react-phone-number-input/style.css"; */  
+import PhoneInput from "react-phone-number-input";
 
 export default function ContactMe() {
   const formRef = useRef(); /* this is a tag which we will attach to our form */
   const [status, setStatus] = useState(false);
 
-
-  
+  const [value, setValue] = useState();
+  console.log(value);
   const contextHeader = useRef();
 
   const sendEmail = (e) => {
@@ -31,6 +33,8 @@ export default function ContactMe() {
       });
 
     formRef.current.reset();
+    e.target.phone.value ="";
+
   };
 
   return (
@@ -69,7 +73,7 @@ export default function ContactMe() {
                   placeholder="Name:"
                   required
                   name="user_name"
-                  className="name-input item-contact-form"
+                  className="name-input item-contact-form "
                 />
                 {/* </div>
                 </div> */}
@@ -95,6 +99,23 @@ export default function ContactMe() {
                   name="subject"
                   className="subject-input item-contact-form"
                 />
+                {/*   <input
+                  type="tel"
+                  required
+                  placeholder="Phone No:"
+                  name="user_phone"
+                  className="phone-input"
+                /> */}
+
+                <PhoneInput
+                  placeholder="[Press on icon & insert tel]"
+                  international
+                  value={value}
+                  onChange={setValue}
+                  name="phone"
+                  className="phone-input item-contact-form"
+                  />
+
                 <textarea
                   required
                   name="message"

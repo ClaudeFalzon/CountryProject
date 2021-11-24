@@ -7,6 +7,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+/* .PhoneInputCountrySelect::after {
+  content:"+"
+} */
+
 /* .item-form-icon {
   display: flex;
   justify-content: center;
@@ -236,12 +240,12 @@ form {
 .text-fields {
   display: grid;
   grid-template-areas:
-    "name name name"
-    "surname surname surname"
-    "email email email"
-    "subject subject subject"
-    "message message submit "
-    "message message submit ";
+    "name name name  name"
+    "surname surname surname surname"
+    "email email email  email"
+    "subject phone phone  phone"
+    "message message submit submit "
+    "message message submit submit";
   gap: 5px;
 }
 
@@ -278,7 +282,6 @@ button {
   width: 600px;
   margin-top: 45px;
 }
-
 .text-fields .item-contact-form {
   font-size: 14px;
 }
@@ -323,13 +326,50 @@ button {
 @media (max-width: 670px) {
   .text-fields {
     grid-template-areas:
-      "name name name"
-      "surname surname surname"
-      "email email email"
-      "subject subject subject"
-      "message message submit "
-      "message message submit ";
+      "name name name name"
+      "surname surname surname surname"
+      "phone phone phone phone"
+      "email email email email"
+      "subject subject subject subject "
+      "message message message message "
+      "submit submit submit submit ";
   }
+
+  .text-fields .item-contact-form {
+    font-size: 12px;
+  }
+
+  .phone-input,
+  .email-input,
+  .subject-input,
+  .surname-input,
+  .name-input {
+    width: 100%;
+
+    border-radius: 0px;
+    border: 1px solid rgb(214, 214, 214);
+
+    /*  outline: none; */
+    padding-left: 10px;
+  }
+  input {
+    border: none; 
+    padding-left: 15px;
+    font-size: 12px;
+    width: 100%;
+  }
+
+
+/* input:focus,
+textarea:focus {
+  outline: none !important;
+  border-color: rgb(192, 0, 128);
+} */
+
+/* .text-fields .phone-input:focus {
+  border: 5px solid rgb(216, 8, 8);
+} */
+
   .sendbtn {
     font-size: 20px;
 
@@ -339,16 +379,16 @@ button {
 
   .text-fields .name-input {
     grid-area: name;
-    width: 520px;
+    width: 100%;
     margin-top: 45px;
   }
   input {
     width: 100%;
   }
 }
- button {
-  padding: 12px;
-}  
+button {
+  padding: 15px;
+}
 
 @media (max-width: 681px) {
   .nav {
@@ -356,7 +396,6 @@ button {
     /* padding: 30px; */
     height: 100px;
     justify-content: center;
-    max-width: 100%;
   }
   .icon-logo {
     font-size: 40px;
@@ -409,35 +448,8 @@ button {
   }
 }
 
-@media (max-width: 530px) {
-
-  .nav {
-    max-width: 100%;
-  }
-
-  .text-fields {
-    grid-template-areas:
-      "name "
-      "surname "
-      "email "
-      "subject "
-      "message  "
-      " submit ";
-  }
-
-  .text-fields .name-input {
-    grid-area: name;
-    width: 400px;
-    margin-top: 45px;
-  }
-}
-
 @media (max-width: 482px) {
-  .nav {
-    max-width: 100%;
-  } 
- 
- .card {
+  .card {
     padding: 40px;
   }
 
@@ -449,13 +461,9 @@ button {
   .card .further_info p {
     font-size: 12px;
   }
-
-  .text-fields .item-contact-form {
-    font-size: 12px;
-  }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 420px) {
   .nav {
     max-width: 100%;
   }
@@ -464,45 +472,4 @@ button {
     width: 150px;
     height: 100px;
   }
-
-  .text-fields {
-    grid-template-areas:
-      "name "
-      "surname "
-      "email "
-      "subject "
-      "message  "
-      " submit ";
-  }
-
-  .text-fields .name-input {
-    grid-area: name;
-    width: 280px;
-    margin-top: 45px;
-  }
 }
-
-@media (max-width: 320px) {
-  .nav {
-    max-width: 100%;
-  }
-
-  .text-fields .name-input {
-    grid-area: name;
-    width: 235px;
-    margin-top: 45px;
-  }}
-
-  @media (max-width: 260px) {
-
-    .nav {
-    max-width: 100%;
-  }
-  
-    .text-fields .name-input {
-      grid-area: name;
-      width: 180px;
-      margin-top: 45px;
-    }
-  }
-

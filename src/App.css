@@ -7,10 +7,6 @@
   font-family: "Raleway", sans-serif;
 }
 
-/* .PhoneInputCountrySelect::after {
-  content:"+"
-} */
-
 /* .item-form-icon {
   display: flex;
   justify-content: center;
@@ -240,11 +236,12 @@ form {
 .text-fields {
   display: grid;
   grid-template-areas:
-    "name name name  name"
-    "email email email  email"
-    "subject phone phone  phone"
-    "message message submit submit "
-    "message message submit submit";
+    "name name name"
+    "surname surname surname"
+    "email email email"
+    "subject subject subject"
+    "message message submit "
+    "message message submit ";
   gap: 5px;
 }
 
@@ -278,9 +275,17 @@ button {
 } */
 .text-fields .name-input {
   grid-area: name;
-  width: 600px; 
+  width: 600px;
   margin-top: 45px;
 }
+
+.text-fields .item-contact-form {
+  font-size: 14px;
+}
+.text-fields .surname-input {
+  grid-area: surname;
+}
+
 .text-fields .email-input {
   grid-area: email;
 }
@@ -316,37 +321,36 @@ button {
 }
 
 @media (max-width: 670px) {
-  
   .text-fields {
-      grid-template-areas:
-      "name"
-      "email"
-      "phone"
-      "subject"
-      "message"
-      "submit ";
-    } 
-  .sendbtn {
-    font-size: 20px; 
+    grid-template-areas:
+      "name name name"
+      "surname surname surname"
+      "email email email"
+      "subject subject subject"
+      "message message submit "
+      "message message submit ";
+  }
+
   
+  .sendbtn {
+    font-size: 20px;
+
     /* color: blue; */
     /* padding: 10px; */
   }
 
-
   .text-fields .name-input {
-  grid-area: name;
-  width: 100%; 
-  margin-top: 45px;
+    grid-area: name;
+    width: 520px;
+    margin-top: 45px;
+  }
+  input {
+    width: 100%;
+  }
 }
-input{
-  width: 100%;
-}
-
-}
-button {
-  padding: 20px
-}
+ button {
+  padding: 12px;
+}  
 
 @media (max-width: 681px) {
   .nav {
@@ -354,6 +358,7 @@ button {
     /* padding: 30px; */
     height: 100px;
     justify-content: center;
+    max-width: 100%;
   }
   .icon-logo {
     font-size: 40px;
@@ -365,7 +370,6 @@ button {
 
   .text-fields .name-input {
     grid-area: name;
-  
   }
 
   .container-form .entrance-form {
@@ -407,8 +411,35 @@ button {
   }
 }
 
+@media (max-width: 530px) {
+
+  .nav {
+    max-width: 100%;
+  }
+
+  .text-fields {
+    grid-template-areas:
+      "name "
+      "surname "
+      "email "
+      "subject "
+      "message  "
+      " submit ";
+  }
+
+  .text-fields .name-input {
+    grid-area: name;
+    width: 400px;
+    margin-top: 45px;
+  }
+}
+
 @media (max-width: 482px) {
-  .card {
+  .nav {
+    max-width: 100%;
+  } 
+ 
+ .card {
     padding: 40px;
   }
 
@@ -420,9 +451,13 @@ button {
   .card .further_info p {
     font-size: 12px;
   }
+
+  .text-fields .item-contact-form {
+    font-size: 12px;
+  }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 440px) {
   .nav {
     max-width: 100%;
   }
@@ -431,4 +466,45 @@ button {
     width: 150px;
     height: 100px;
   }
+
+  .text-fields {
+    grid-template-areas:
+      "name "
+      "surname "
+      "email "
+      "subject "
+      "message  "
+      " submit ";
+  }
+
+  .text-fields .name-input {
+    grid-area: name;
+    width: 280px;
+    margin-top: 45px;
+  }
 }
+
+@media (max-width: 320px) {
+  .nav {
+    max-width: 100%;
+  }
+
+  .text-fields .name-input {
+    grid-area: name;
+    width: 235px;
+    margin-top: 45px;
+  }}
+
+  @media (max-width: 260px) {
+
+    .nav {
+    max-width: 100%;
+  }
+  
+    .text-fields .name-input {
+      grid-area: name;
+      width: 180px;
+      margin-top: 45px;
+    }
+  }
+
