@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, useNavigate } from "react-router";
 import "./App.css";
+import "./mystyle.css";
 import About from "./components/About";
 import ContactMe from "./components/ContactMe";
 import Country from "./components/Country";
